@@ -1,0 +1,69 @@
+/* AVATAR */
+
+header section{
+    display: flex;
+    justify-content: space-between; /*justifica o(s) conteudo(s): space-between ajusta ate as extremidades*/
+    background-color: #2D9CDB; /* Cor do fundo */
+    border-bottom: 10px solid black;
+    padding: 10px 20px;    
+}
+
+/* NAV */
+
+nav{    
+    text-align:right;    
+}
+
+
+/* TAG a (links de navegação) */
+
+a{
+    display: inline-flex;
+    align-items: center;
+    color: #fff; /* Cor da fonte */
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: "fira code", Arial, Helvetica, sans-serif;
+    font-weight: 500; /* Peso da fonte  */
+    text-decoration: none; /*Remove Underline do Link*/
+    margin-right: 30px; /*Margem a direita */
+        
+}
+
+a::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #27AE60;
+    margin-right: 10px;
+}
+
+
+/* ID Button */
+
+#button{
+    display: inline-block;
+    background-color: #27AE60;
+    box-shadow: 5px 5px 0px #000;
+    padding-top: 18px;
+    padding-right: 20px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+    /*padding: 18px 20px;  essa é a forma resumida, o primeiro valor começa no top e repete no botton, o segundo valor começa a direita(right) e repete a esquerda(Left), seguindo sentido horário  */
+    margin-right: 0px;
+    
+}
+
+#button:hover { /*houver aplica efeito quando passar mouse*/
+    background-color: #7C5E99;
+    color:#fff;
+  
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.6));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.6));
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.05);
+}
+
+a:hover{
+    color: #000;
+}
