@@ -1,0 +1,5 @@
+/* tira todas pré configurações que o navegador coloca por definição */
+
+body{
+    margin: 0;
+}
